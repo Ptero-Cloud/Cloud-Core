@@ -65,7 +65,12 @@ public class PteroCloud {
         utils = new Utils();
         logger = new eu.zonecraft.pterocloud.utils.message.Logger();
         instance.shutdownHook();
-        instance.init();
+       // instance.init();
+        try {
+            test.main(args);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void init() {
