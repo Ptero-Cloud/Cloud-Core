@@ -5,7 +5,6 @@ import eu.zonecraft.pterocloud.commands.Command;
 import eu.zonecraft.pterocloud.utils.message.Color;
 import eu.zonecraft.pterocloud.utils.message.MessageType;
 import eu.zonecraft.pterocloud.utils.message.MessageUtils;
-
 public class InfoCommand extends Command {
     public InfoCommand() {
         super("info", "Prints information about the CloudSystem");

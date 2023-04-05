@@ -63,8 +63,11 @@ public class PteroCloud {
         FileUtils.createFiles();
         logger = new eu.zonecraft.pterocloud.utils.message.Logger();
         instance.shutdownHook();
-        instance.init();
 
+        logger = new eu.zonecraft.pterocloud.utils.message.Logger();
+        instance.shutdownHook();
+
+        instance.init();
     }
 
     public void init() {
@@ -82,7 +85,7 @@ public class PteroCloud {
                         Color.RESET + " / ____/ /_/  __/ /  / /_/ / /___/ / /_/ / /_/ / /_/ /  \n" +
                         Color.RESET + "/_/    \\__/\\___/_/   \\____/\\____/_/\\____/\\__,_/\\__,_/   \n" +
                         "                                                        \n" +
-                        Color.GRAY + "» " + Color.CYAN + "Version" + Color.GRAY + ": " + Color.BLUE +  "\n" +
+                        Color.GRAY + "» " + Color.CYAN + "Version" + Color.GRAY + ": " + Color.BLUE + new VersionManager().getVersion() + "\n" +
                         Color.GRAY + "» " + Color.CYAN + "Developed by " + Color.BLUE + "ZoneCraft-Team\n");
 
 

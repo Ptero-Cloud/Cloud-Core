@@ -3,7 +3,6 @@ package eu.zonecraft.pterocloud.utils.message;
 import eu.zonecraft.pterocloud.PteroCloud;
 
 import java.util.Date;
-
 public class MessageUtils {
 
     public static Thread animationThread;

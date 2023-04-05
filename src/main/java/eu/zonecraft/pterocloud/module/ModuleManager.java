@@ -1,6 +1,7 @@
 package eu.zonecraft.pterocloud.module;
 
 import eu.zonecraft.pterocloud.PteroCloud;
+import eu.zonecraft.pterocloud.utils.message.Color;
 import eu.zonecraft.pterocloud.utils.message.MessageType;
 import eu.zonecraft.pterocloud.utils.message.MessageUtils;
 

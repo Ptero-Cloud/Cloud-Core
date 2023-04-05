@@ -46,7 +46,7 @@ public class MinecraftServerHandler extends ChannelInboundHandlerAdapter {
                 .handler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(new ForwardHandler(ctx.channel()));
+                        ch.pipeline().addLast(new eu.zonecraft.pterocloud.network.handler.ForwardHandler(ctx.channel()));
                     }
                 });
 

@@ -28,10 +28,18 @@ public class GroupCommand extends Command {
             } else {
                 MessageUtils.sendMessage(MessageType.WARNING, "Group not found!");
             }
+        } else if (args.length == 2 && args[0].equalsIgnoreCase("delete")) {
+            if (PteroCloud.getInstance().getGroupManager().groupExists(args[1])) {
+                PteroCloud.getInstance().getGroupManager().deleteGroup(args[1]);
+
+            } else {
+
+            }
         } else {
             MessageUtils.sendMessage("group setup " + Color.GRAY + "» " + Color.BLUE + "Create a new group");
             MessageUtils.sendMessage("group delete " + Color.GRAY + "(" + Color.BLUE + "Group" + Color.GRAY + ") " + Color.GRAY + "» " + Color.BLUE + "Create a new group");
             MessageUtils.sendMessage("group list " + Color.GRAY + "» " + Color.BLUE + "Lists all registered groups");
+
         }
     }
 }

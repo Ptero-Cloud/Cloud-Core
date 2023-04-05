@@ -2,6 +2,11 @@ package eu.zonecraft.pterocloud.commands;
 
 import eu.zonecraft.pterocloud.PteroCloud;
 import eu.zonecraft.pterocloud.commands.impl.*;
+
+import eu.zonecraft.pterocloud.commands.impl.ClearCommand;
+import eu.zonecraft.pterocloud.commands.impl.HelpCommand;
+import eu.zonecraft.pterocloud.commands.impl.InfoCommand;
+import eu.zonecraft.pterocloud.commands.impl.StopCommand;
 import eu.zonecraft.pterocloud.utils.message.Color;
 import eu.zonecraft.pterocloud.utils.message.MessageType;
 import eu.zonecraft.pterocloud.utils.message.MessageUtils;

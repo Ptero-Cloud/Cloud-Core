@@ -98,8 +98,4 @@ public class ServiceManager {
         getServicesFromGroup(groupName).forEach((service, group) -> stopService(service));
     }
 
-    public void runCommand(String serviceName, String command) {
-        
-    }
-
 }

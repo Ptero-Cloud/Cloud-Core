@@ -34,10 +34,8 @@ public class GroupManager {
         storage.set("static", isStatic + "");
         storage.set("groupType", type + "");
         storage.set("isAutoStart", isAutoStart + "");
+
     }
-
-
-
     public String get(String groupName, String path) {
         Storage storage = new Storage(new File(FileUtils.GROUPS_FOLDER, groupName + ".json"));
         return storage.get(path);
@@ -79,6 +77,4 @@ public class GroupManager {
         Storage storage = new Storage(new File(FileUtils.GROUPS_FOLDER, groupName + ".json"));
         return Boolean.parseBoolean(storage.get("groupType"));
     }
-
-
 }
